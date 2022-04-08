@@ -1,0 +1,81 @@
+/* Header */
+header{
+    background-color: var(--yellow);
+    position: fixed;
+    width:100%;
+    top:0;
+    left:0;
+    z-index: 2;
+}
+header div .logo{
+   display: flex;
+   justify-content: center;
+}
+nav.burger-menu{
+    padding: 7px;
+    text-align: center;
+}
+nav.burger-menu button{
+    background-color: var(--lightblue);
+    color: var(--lightgrey);
+    height: 2rem;
+    border-radius: 5px;
+}
+header p.search-bar {
+    display: flex;
+    justify-content: center;
+}
+header .listas ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+header .listas ul li a{
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+
+}
+p.quote{
+    text-align:center;
+}
+@media(min-width: 768px){
+    header .logo{
+        height: 62px;
+    }
+    header .top-bar{
+        display: flex;
+        justify-content: space-between;
+    } 
+    p.quote{
+        max-width: 350px;
+        text-align:right;
+    }
+    header .listas{
+        display: flex;
+        justify-content: space-between;
+    }
+    header .listas ul{
+        display: flex;
+    }
+    header .listas ul li{
+        margin: 0px 5px;
+    }
+}
+@media(min-width: 1024px){
+        header .top-bar, header .listas{
+            max-width: 1024px;
+            margin: auto;
+            font-size: 20px;
+        }
+        header .top-bar .search-bar{
+            size: 20px;
+        }
+        header .top-bar{
+            align-items: center;
+        }
+        p.quote{
+            max-width: none;
+        }
+}
+/* End header */
